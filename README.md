@@ -1,3 +1,5 @@
+
+
 # Expernetic Data Engineering Intern Assignment
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)
@@ -191,9 +193,11 @@ Run in this order — later notebooks read from the Gold layer and assume earlie
 
 ### Dashboard:
 Open `dashboards/Cape Town Supply Density & Price Heatmap.pbix` in Power BI Desktop, or view the exported `dashboards/Cape Town Supply Density & Price Heatmap.pdf` directly if Power BI isn't available. The dashboard connects to the Gold-layer Parquet outputs produced in Step 6.
+<img width="1460" height="846" alt="image" src="https://github.com/user-attachments/assets/2f6a6b01-224a-41d8-be09-338c181f2aa4" />
+
 
 ### Data Copilot:
-- 🎥 **Demo video:** `[Insert link here if recorded]`
+- 🎥 **Demo video:** https://github.com/user-attachments/assets/8e9873b4-2d61-4aaf-8b0b-fc3179ac8e76
 - 💻 **Project Repository:** [View Source Code on GitHub](https://github.com/ThamaraBhagya/Data-Copilot)
 
   
