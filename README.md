@@ -11,7 +11,7 @@
 
 ## Executive Summary
 
-This repository delivers a Bronze → Silver → Gold pipeline for the Cape Town Inside Airbnb dataset (single-city scope, prioritizing depth over breadth — see `docs/decision_log.md` for the full rationale), followed by warehouse modeling, exploratory data analysis, formal statistical testing, an AI-assisted data copilot, and a business-facing dashboard. The goal is a reproducible analytics stack that turns raw marketplace data into decision-ready insight on pricing, supply, demand, seasonality, and host behavior — with every assumption, limitation, and engineering trade-off explicitly documented rather than hidden in code.
+This repository delivers a Bronze → Silver → Gold pipeline for the Cape Town Inside Airbnb dataset (single-city scope, prioritizing depth over breadth — see `docs/project_execution_summary.md` for the full rationale), followed by warehouse modeling, exploratory data analysis, formal statistical testing, an AI-assisted data copilot, and a business-facing dashboard. The goal is a reproducible analytics stack that turns raw marketplace data into decision-ready insight on pricing, supply, demand, seasonality, and host behavior — with every assumption, limitation, and engineering trade-off explicitly documented rather than hidden in code.
 
 **Start here if you're reviewing this submission**, in this order:
 1. This README (you are here)
@@ -57,7 +57,6 @@ AIRBNB_PROJECT/
 │   ├── enrich.py                 # Gold: joins, aggregates, derived business fields
 │   ├── build_warehouse.py         # DuckDB star schema build
 │   └── pipeline.py                 # End-to-end orchestrator (logging + retry)
-├── data-copilot/                     # LLM-powered data copilot (see Section 7 below)
 ├── pipeline.log                 # Execution log from the most recent pipeline run
 ├── requirements.txt
 └── README.md
@@ -75,7 +74,6 @@ AIRBNB_PROJECT/
 | `notebooks/01_data_profiling.ipynb` | Documents the investigation behind every assumption in `docs/` |
 | `notebooks/eda/` | Section 4 — distributions, geography, seasonality, host/demand analysis |
 | `notebooks/05_statistical_analysis.ipynb` | Section 5 — hypothesis tests, regression, effect sizes |
-| `data-copilot/` | Section 7 — natural-language Q&A interface over the Gold layer |
 | `dashboards/` | Section 8 — business-facing Power BI market intelligence view |
 | `docs/` | The audit trail: every assumption, limitation, and trade-off, in writing |
 
@@ -191,9 +189,10 @@ Run in this order — later notebooks read from the Gold layer and assume earlie
 
 ### 9) Review the dashboard and data copilot
 
-**Dashboard:** Open `dashboards/Cape Town Supply Density & Price Heatmap.pbix` in Power BI Desktop, or view the exported `dashboards/Cape Town Supply Density & Price Heatmap.pdf` directly if Power BI isn't available. The dashboard connects to the Gold-layer Parquet outputs produced in Step 6.
+### Dashboard:
+Open `dashboards/Cape Town Supply Density & Price Heatmap.pbix` in Power BI Desktop, or view the exported `dashboards/Cape Town Supply Density & Price Heatmap.pdf` directly if Power BI isn't available. The dashboard connects to the Gold-layer Parquet outputs produced in Step 6.
 
-**Data Copilot:**
+### Data Copilot:
 - 🎥 **Demo video:** `[Insert link here if recorded]`
 - 💻 **Project Repository:** [View Source Code on GitHub](https://github.com/ThamaraBhagya/Data-Copilot)
 
