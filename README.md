@@ -90,10 +90,10 @@ AIRBNB_PROJECT/
 | 04 — Exploratory Data Analysis | Distributions, geographic analysis, seasonality, host/demand analysis, business interpretation throughout | `notebooks/eda/` (4 notebooks) |
 | 05 — Statistical Analysis | Hypothesis testing (H1–H4 tested, H5 documented as not testable), confidence intervals, effect sizes, OLS regression, VIF, LOWESS | `notebooks/05_statistical_analysis.ipynb` |
 | 06 — Data Science Challenges | *Not attempted — deprioritized in favor of depth on Sections 02–05 and 07–08. See `docs/decision_log.md`.* | — |
-| 07 — AI & LLM Opportunities | LLM-powered data copilot for natural-language queries over the dataset | `copilot/` — *(fill in entry point filename and run instructions below)* |
+| 07 — AI & LLM Opportunities | LLM-powered data copilot for natural-language queries over the dataset |  — *(This was create in a separate repository)* |
 | 08 — Open Innovation Challenge | Power BI market intelligence dashboard: supply density & price heatmap | `dashboards/Cape Town Supply Density & Price Heatmap.pbix`, `.pdf` |
 
-> **Note on scope:** Sections 02–05 were treated as the core, mandatory-depth deliverable. Section 06 (Data Science / ML) was deliberately not attempted within the available time budget, in line with the assignment's own stated philosophy that depth on fewer sections outperforms shallow coverage of all of them. This trade-off, and the reasoning behind it, is recorded in `docs/decision_log.md` and in the report's "Summary: Incomplete Work" section.
+> **Note on scope:** Sections 02–05 were treated as the core, mandatory-depth deliverable. Section 06 (Data Science / ML) was deliberately not attempted within the available time budget, in line with the assignment's own stated philosophy that depth on fewer sections outperforms shallow coverage of all of them. This trade-off, and the reasoning behind it, is recorded in `docs/project_execution_summary.md` and in the report's "Summary: Incomplete Work" section.
 
 ---
 
@@ -110,7 +110,11 @@ AIRBNB_PROJECT/
 ### 2) Clone the repository
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone https://github.com/ThamaraBhagya/Airbnb_Analytics.git
+
+Uploading 0624.mp4…
+
+
 cd airbnb_project
 ```
 
@@ -189,12 +193,11 @@ Run in this order — later notebooks read from the Gold layer and assume earlie
 
 **Dashboard:** Open `dashboards/Cape Town Supply Density & Price Heatmap.pbix` in Power BI Desktop, or view the exported `dashboards/Cape Town Supply Density & Price Heatmap.pdf` directly if Power BI isn't available. The dashboard connects to the Gold-layer Parquet outputs produced in Step 6.
 
-**Data Copilot:** 
+**Data Copilot:**
+- 🎥 **Demo video:** `[Insert link here if recorded]`
+- 💻 **Project Repository:** [View Source Code on GitHub](https://github.com/ThamaraBhagya/Data-Copilot)
 
-- Demo video: `<link, if recorded>`
-
----
-
+  
 ## AI Tools Usage Disclosure
 
 | Disclosure Item | Details |
@@ -204,7 +207,7 @@ Run in this order — later notebooks read from the Gold layer and assume earlie
 | Prompts used | See Appendix A of the final PDF report for key prompts |
 | Output validation | Every AI-suggested cleaning step was run against the actual dataset and cross-checked with profiling output before being kept; several initial AI hypotheses (e.g., price outliers being long-stay rates) were tested and rejected based on evidence |
 | Modifications made | *(note any AI-generated code you substantially rewrote)* |
-| Critical assessment | Documented inline in `docs/decision_log.md` wherever an AI suggestion was investigated and overturned |
+| Critical assessment | Documented inline in `docs/project_execution_summary.md` wherever an AI suggestion was investigated and overturned |
 
 ---
 
@@ -219,5 +222,4 @@ These are dataset-level constraints, not implementation gaps — full reasoning 
 
 ---
 
-- [ ] Confirm `requirements.txt` is present, complete, and installs cleanly in a fresh virtual environment
-- [ ] Remove or anonymize any API keys, credentials, or personal data from notebooks, `.env` files, and copilot config before pushing
+
