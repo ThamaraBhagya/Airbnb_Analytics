@@ -197,7 +197,8 @@ Open `dashboards/Cape Town Supply Density & Price Heatmap.pbix` in Power BI Desk
 
 
 ### Data Copilot:
-- 🎥 **Demo video:** https://github.com/user-attachments/assets/8e9873b4-2d61-4aaf-8b0b-fc3179ac8e76
+- 🎥 **Demo video:**
+https://github.com/user-attachments/assets/8e9873b4-2d61-4aaf-8b0b-fc3179ac8e76
 - 💻 **Project Repository:** [View Source Code on GitHub](https://github.com/ThamaraBhagya/Data-Copilot)
 
   
